@@ -33,7 +33,7 @@ summary(selected_data)
 cor(selected_data$Comprehension_Score, as.numeric(selected_data$Consent_Method))
 
 # Scatterplot for initial visualization
-plot(selected_data$Comprehension_Score ~ as.numeric(selected_data$Consent_Method))
+plot(selected_data$Comprehension_Score ~ as.numeric(selected_data$Consent_Method), ylab="COMPREHENSION_SCORE", xlab="CONSENT_METHOD")
 boxplot(Comprehension_Score ~ Consent_Method, data = selected_data)
 
 
